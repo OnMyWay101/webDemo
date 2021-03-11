@@ -7,13 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class ServletContextDemo1 extends HttpServlet {
+public class ServletContextDemo3 extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        String data = "xdp_gacl";
-        ServletContext context = this.getServletConfig().getServletContext();
-        context.setAttribute("data", data);
-        resp.getWriter().print("add data to servletContext!");
+        ServletContext context = this.getServletContext();
+        String contextInitParam = (String)context.getInitParameter("url");
+        resp.getWriter().print(contextInitParam);
     }
 
     @Override
