@@ -60,4 +60,44 @@
         <param-name>url</param-name>
         <param-value>jdbc:mysql://localhost:3306/test</param-value>
     </context-param>
+
+    <servlet>
+        <servlet-name>ServletContextDemo4</servlet-name>
+        <servlet-class>ServletContextTest.ServletContextDemo4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo4</servlet-name>
+        <url-pattern>/ServletContextDemo4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletContextDemo5</servlet-name>
+        <servlet-class>ServletContextTest.ServletContextDemo5</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo5</servlet-name>
+        <url-pattern>/ServletContextDemo5</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletContextDemo6</servlet-name>
+        <servlet-class>ServletContextTest.ServletContextDemo6</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo6</servlet-name>
+        <url-pattern>/ServletContextDemo6</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletContextDemo7</servlet-name>
+        <servlet-class>ServletContextTest.ServletContextDemo7</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContextDemo7</servlet-name>
+        <url-pattern>/ServletContextDemo7</url-pattern>
+    </servlet-mapping>
 </web-app>
